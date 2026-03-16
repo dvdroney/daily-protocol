@@ -125,7 +125,7 @@ The full routine has ~23 items per day. For someone starting from scratch, the a
     "id": "dandruff_shampoo",
     "name": "Dandruff Shampoo (CeraVe Anti-Dandruff)",
     "schedule": "specific_days",
-    "default_days": ["monday", "wednesday", "friday"],
+    "default_days": ["monday", "friday"],
     "timer_type": "countdown",
     "timer_seconds": 240,
     "timer_label": "Shampoo contact time",
@@ -133,6 +133,20 @@ The full routine has ~23 items per day. For someone starting from scratch, the a
     "category": "hair",
     "product": "CeraVe Anti-Dandruff Hydrating Shampoo",
     "product_url": "https://www.amazon.com/CeraVe-Hydrating-Pyrithione-Niacinamide-Hyaluronic/dp/B0DV43L7J8"
+  },
+  {
+    "id": "ketoconazole_shampoo",
+    "name": "Ketoconazole Shampoo (Nizoral)",
+    "schedule": "specific_days",
+    "default_days": ["wednesday"],
+    "timer_type": "countdown",
+    "timer_seconds": 240,
+    "timer_label": "Shampoo contact time",
+    "instructions": "Use in place of CeraVe dandruff shampoo 1x/week. Lather into scalp, leave on 3-5 min. Mild anti-androgenic effect on scalp — studies show hair density improvements comparable to minoxidil 2%.",
+    "category": "hair",
+    "product": "Nizoral A-D Anti-Dandruff Shampoo (1% Ketoconazole)",
+    "product_url": "https://www.amazon.com/Nizoral-Anti-Dandruff-Shampoo-Ketoconazole-Dandruff/dp/B00AINMFAC",
+    "mutually_exclusive_with": "gentle_shampoo"
   },
   {
     "id": "gentle_shampoo",
@@ -215,6 +229,13 @@ The full routine has ~23 items per day. For someone starting from scratch, the a
     "instructions": "1 softgel with breakfast. Fat-soluble carotenoid. Protects against UV and exercise-induced oxidative stress. Pairs with topical Vitamin C for internal + external antioxidant protection.",
     "category": "supplement",
     "product": "Sports Research Astaxanthin"
+  },
+  {
+    "id": "brazil_nut",
+    "name": "Brazil Nut (1-2 nuts)",
+    "schedule": "daily",
+    "instructions": "1-2 Brazil nuts with breakfast for selenium (~140-180 mcg). Supports thyroid conversion (T4→T3), reduces TPO antibodies, and supports hair growth. Do NOT eat more than 3/day — selenium toxicity is possible.",
+    "category": "supplement"
   }
 ]
 ```
@@ -599,6 +620,7 @@ StreakData {
 | Mielle Rosemary Mint Scalp Oil | https://www.amazon.com/Mielle-Rosemary-Mint-Scalp-Strengthening/dp/B07N7PK9QK |
 | Botanic Hearth Rosemary Oil | https://www.amazon.com/Botanic-Hearth-Strenghtening-Nourishing-Volumizing/dp/B0C6XJMSGP |
 | Handcraft Jojoba Oil | https://www.amazon.com/Handcraft-Blends-Organic-Jojoba-Oil/dp/B07NQ7VPRC |
+| Nizoral A-D Anti-Dandruff Shampoo (1% Ketoconazole) | https://www.amazon.com/Nizoral-Anti-Dandruff-Shampoo-Ketoconazole-Dandruff/dp/B00AINMFAC |
 
 ---
 
