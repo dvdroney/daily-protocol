@@ -12,7 +12,7 @@
 | Pre-run (~6:00 AM) | Granola bar + Acetyl-L-Carnitine |
 | Run / workout | — |
 | Post-workout (~7:15-7:30 AM) | Shower (CeraVe dandruff shampoo Mon/Fri, Nizoral Wed) → Scalp massage → Morning skincare |
-| Breakfast (~7:45-8:00 AM) | Omega-3, Vitamin D, Astaxanthin, 1-2 Brazil nuts with meal → Facial exercises |
+| Breakfast (~7:45-8:00 AM) | Omega-3, Vitamin D, Astaxanthin, Saw Palmetto, 1-2 Brazil nuts with meal → Facial exercises |
 | Mid-day / Lunch | Iron (away from dairy & coffee) |
 | Afternoon (post-strength, if applicable) | Acetyl-L-Carnitine (2nd dose) |
 | Dinner (~6:00-6:30 PM) | Zinc |
@@ -95,6 +95,7 @@ EltaMD UV Clear SPF 46 or CeraVe AM SPF 30. Every day, even winter.
 | **Momentous Omega-3** | 2 softgels (1,600 mg EPA+DHA) | Fat-soluble — needs dietary fat for absorption |
 | **Klean Athlete Klean-D 5000 IU** | 1 tablet | Fat-soluble — same reason. Important for Hashimoto's; many autoimmune patients are deficient |
 | **Sports Research Astaxanthin** | 1 softgel (6 mg) | Fat-soluble carotenoid. Potent antioxidant — protects against UV/exercise-induced oxidative stress |
+| **Flomentum Saw Palmetto** | 1 softgel (320 mg) | USP Verified. Natural DHT blocker (both Type I and II 5-alpha reductase). Pairs with astaxanthin for enhanced effect. 3-6 months to evaluate. |
 | **Brazil Nut** | 1-2 nuts | Selenium (~140-180 mcg). Supports thyroid T4→T3 conversion, reduces TPO antibodies. Do NOT eat more than 3/day — selenium toxicity is real. |
 
 **Why these together:** All three are fat-soluble, so they absorb best with a meal containing fat. Post-workout is also when your body is primed for nutrient uptake. The astaxanthin pairs well with the Vitamin C serum you just applied — internal + external antioxidant protection.
@@ -309,6 +310,7 @@ The Ordinary AHA 30% + BHA 2% peeling solution, or salicylic acid wash. Use in p
 | Sports Research Astaxanthin | 6 mg | Breakfast |
 | Klean Athlete Klean Iron | 27 mg | Lunch |
 | Klean Athlete Klean Zinc | 1 tablet | Dinner |
+| Flomentum Saw Palmetto (USP Verified) | 320 mg | Breakfast |
 | Thorne Magnesium Bisglycinate | 200 mg | ~7:30-8:00 PM |
 | Levothyroxine | Prescribed dose | Bedtime (~10:00-10:30 PM) |
 
@@ -377,7 +379,7 @@ The Ordinary AHA 30% + BHA 2% peeling solution, or salicylic acid wash. Use in p
 
 ## FUTURE INTERVENTIONS — Consider After 6 Months
 
-If the current natural stack (rosemary oil, microneedling, ketoconazole, scalp massage, selenium, iron optimization) hasn't produced visible results by month 6, consider adding:
+If the current stack (rosemary oil, microneedling, ketoconazole, saw palmetto, scalp massage, selenium, iron optimization) hasn't produced visible results by month 6, consider adding:
 
 **Minoxidil 5% (Rogaine) — topical, OTC**
 The gold standard for non-prescription hair regrowth, FDA-approved with decades of clinical trial data. Works through vasodilation — increases blood flow to follicles and prolongs the growth phase. Completely different mechanism from everything else in this protocol, so it stacks well. Apply to crown/thinning areas 1-2x daily. No interaction with levothyroxine.
@@ -387,6 +389,3 @@ Caveats:
 - May cause initial "shedding phase" (weeks 2-8) as weak hairs are pushed out by new growth — this is a good sign
 - Possible side effects: scalp irritation, rarely unwanted facial hair growth
 - Discuss with a dermatologist before starting
-
-**Saw Palmetto (320mg/day) — oral, OTC**
-Natural 5-alpha reductase inhibitor. Blocks conversion of testosterone to DHT at the follicle. Roughly half as effective as finasteride but with essentially zero sexual side effects. Look for USP Verified (Flomentum) or physician-grade (Pure Encapsulations Saw Palmetto 320). Take with a fat-containing meal. No interaction with levothyroxine. Minimum 3-6 months to evaluate.
