@@ -159,16 +159,6 @@ export const ROUTINE_ITEMS = [
     product: 'Sports Research Astaxanthin',
   },
   {
-    id: 'saw_palmetto',
-    name: 'Saw Palmetto (320mg)',
-    timeBlock: 'breakfast',
-    category: 'supplement',
-    schedule: 'daily',
-    instructions: 'Take 1 softgel with breakfast (fat-soluble). Natural DHT blocker — blocks both Type I and II 5-alpha reductase. Pairs well with astaxanthin for enhanced effect. Minimum 3-6 months to evaluate results.',
-    product: 'Flomentum Saw Palmetto (USP Verified)',
-    productUrl: 'https://www.amazon.com/Flomentum-Mens-Health-Prostate-Supplement/dp/B07ZTT3JSG',
-  },
-  {
     id: 'brazil_nut',
     name: 'Brazil Nut (1-2 nuts)',
     timeBlock: 'breakfast',
