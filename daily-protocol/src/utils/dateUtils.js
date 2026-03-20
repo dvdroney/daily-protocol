@@ -67,3 +67,19 @@ export function getPreviousDate(dateStr) {
   d.setDate(d.getDate() - 1);
   return formatYMD(d);
 }
+
+export function getNextDate(dateStr) {
+  const d = parseDate(dateStr);
+  d.setDate(d.getDate() + 1);
+  return formatYMD(d);
+}
+
+export function getRelativeDayLabel(dateStr) {
+  const today = getEffectiveDate();
+  const diff = daysBetween(today, dateStr);
+  if (diff === 0) return 'Today';
+  if (diff === 1) return 'Tomorrow';
+  if (diff === -1) return 'Yesterday';
+  const d = parseDate(dateStr);
+  return d.toLocaleDateString('en-US', { weekday: 'long' });
+}

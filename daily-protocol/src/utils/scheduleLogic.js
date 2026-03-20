@@ -1,24 +1,22 @@
 import { getDayOfWeek, getDayOfYear, daysBetween } from './dateUtils';
 import { ROUTINE_ITEMS } from '../data/routineData';
 
-export function getScheduledItems(dateStr, settings = {}) {
+export function getScheduledItems(dateStr, settings = {}, items = null) {
+  const allItems = items || ROUTINE_ITEMS;
   const dayOfWeek = getDayOfWeek(dateStr);
   const dayOfYear = getDayOfYear(dateStr);
 
-  // First pass: determine which items are scheduled
   const scheduledIds = new Set();
-  const items = [];
+  const scheduled = [];
 
-  for (const item of ROUTINE_ITEMS) {
-    if (isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings)) {
+  for (const item of allItems) {
+    if (isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings, allItems)) {
       scheduledIds.add(item.id);
-      items.push(item);
+      scheduled.push(item);
     }
   }
 
-  // Second pass: resolve conflicts
-  return items.filter(item => {
-    // If this item conflicts with another scheduled item, hide it
+  return scheduled.filter(item => {
     if (item.conflictsWith && scheduledIds.has(item.conflictsWith)) {
       return false;
     }
@@ -26,7 +24,7 @@ export function getScheduledItems(dateStr, settings = {}) {
   });
 }
 
-function isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings) {
+function isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings, allItems) {
   switch (item.schedule) {
     case 'daily':
       return true;
@@ -38,7 +36,6 @@ function isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings) {
     }
 
     case 'alternating_days': {
-      // For alternating pairs, show the "basic" variant on even days, "lateral" on odd
       const isEvenDay = dayOfYear % 2 === 0;
       const isBasicVariant = item.id.includes('basic');
       return isBasicVariant ? isEvenDay : !isEvenDay;
@@ -46,7 +43,6 @@ function isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings) {
 
     case 'retinol_schedule': {
       if (settings.retinol_mode === 'nightly') return true;
-      // Alternating: use start date if available, otherwise day-of-year
       if (settings.retinol_start_date) {
         const daysSinceStart = daysBetween(settings.retinol_start_date, dateStr);
         return daysSinceStart >= 0 && daysSinceStart % 2 === 0;
@@ -55,11 +51,10 @@ function isItemScheduled(item, dateStr, dayOfWeek, dayOfYear, settings) {
     }
 
     case 'daily_except': {
-      // Show daily except when the referenced item is scheduled
       if (!item.exceptWhen) return true;
-      const exceptItem = ROUTINE_ITEMS.find(i => i.id === item.exceptWhen);
+      const exceptItem = allItems.find(i => i.id === item.exceptWhen);
       if (!exceptItem) return true;
-      return !isItemScheduled(exceptItem, dateStr, dayOfWeek, dayOfYear, settings);
+      return !isItemScheduled(exceptItem, dateStr, dayOfWeek, dayOfYear, settings, allItems);
     }
 
     default:

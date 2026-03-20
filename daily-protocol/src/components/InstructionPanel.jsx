@@ -1,5 +1,3 @@
-import Timer from './Timer';
-
 function isSafeUrl(url) {
   try {
     const parsed = new URL(url);
@@ -33,13 +31,6 @@ export default function InstructionPanel({ item }) {
           ) : (
             <span className="text-gray-400">{item.product}</span>
           )}
-        </div>
-      )}
-
-      {/* Timer */}
-      {item.timerType && (
-        <div className="mt-3 border-t border-gray-700/50 pt-3">
-          <Timer item={item} />
         </div>
       )}
     </div>

@@ -87,6 +87,26 @@ export const ROUTINE_ITEMS = [
     mutuallyExclusiveWith: 'dandruff_shampoo',
     instructions: 'Skip shampooing entirely (just rinse with water) or use CeraVe Gentle Hydrating Shampoo. Preserves natural scalp oils.',
   },
+  {
+    id: 'scalp_massage',
+    name: 'Scalp Massage',
+    timeBlock: 'post_workout',
+    category: 'hair',
+    schedule: 'daily',
+    durationMinutes: 2,
+    instructions: 'Do in shower or right after \u2014 warm water loosens scalp tissue.\n\n1. CIRCULAR KNEADING (60 sec): All 10 fingertip pads on scalp. Press firmly \u2014 scalp skin should MOVE OVER THE BONE, creating folds. Not just sliding over hair. Small, slow ~1-inch circles. Start at front hairline, work back to crown, then sides, then nape. Extra time on crown/thinning areas.\n\n2. PINCH AND LIFT (30 sec): Grab sections of scalp between fingertips and palm heel. Squeeze together to form a crease, release. Work across the full scalp in a grid pattern.\n\n3. SCALP SHAKE (30 sec): Both hands flat on sides of head. Grip firmly and shake rapidly \u2014 scalp should slide loosely over the skull. Move hand positions around to cover the whole head.',
+  },
+  {
+    id: 'minoxidil',
+    name: 'Minoxidil 5% Foam',
+    timeBlock: 'post_workout',
+    category: 'hair',
+    schedule: 'daily_except',
+    exceptWhen: 'derma_roller',
+    instructions: 'Apply to dry scalp after shower + scalp massage. Part hair to expose crown/thinning areas.\n\nAPPLICATION: Use the foam applicator. Apply to crown and any thinning areas. Spread evenly with fingertips. Do NOT massage in vigorously \u2014 gentle spreading only.\n\nDRYING: Let air dry completely (~15-20 min) before styling or putting on a hat. Do not blow dry the area.\n\nIMPORTANT: Skip on derma roller day (wait 24 hours). Wash hands after applying. Expect an initial shedding phase (weeks 2-8) \u2014 this is normal and means it\u2019s working. Full results take 4-6 months.',
+    product: 'Amazon Basic Care Minoxidil 5% Foam',
+    productUrl: 'https://www.amazon.com/Amazon-Basic-Care-Minoxidil-Treatment/dp/B09NBTMF86',
+  },
 
   // Morning Skincare
   {
@@ -164,7 +184,7 @@ export const ROUTINE_ITEMS = [
     timeBlock: 'morning_exercises',
     category: 'exercise',
     schedule: 'daily',
-    instructions: 'Stand back against wall. Feet ~6in out. Butt, upper back, back of head all touching. Shoulders rolled back. Pull chin straight back toward wall (double chin). Don\u2019t tilt head. Hold 5 sec, release 2 sec. 15 reps.',
+    instructions: 'SETUP: Stand with back against wall. Feet ~6 inches out from wall.\n\nPOSITION: Butt, upper back, and back of head all touching the wall. Roll shoulders back and down \u2014 squeeze shoulder blades together.\n\nMOVEMENT: Pull chin straight back toward wall, making a double chin. Keep head level \u2014 don\u2019t tilt up or down. You should feel a stretch at the base of your skull.\n\nTIMING: Hold 5 sec, release 2 sec. 15 reps (~2 min).\n\nCOMMON MISTAKES: Tilting head down instead of retracting straight back. Not pressing head into wall. Letting shoulders round forward.',
   },
   {
     id: 'mewing_set_am',
@@ -172,7 +192,7 @@ export const ROUTINE_ITEMS = [
     timeBlock: 'morning_exercises',
     category: 'exercise',
     schedule: 'daily',
-    instructions: 'Swallow \u2014 at the peak, tongue is suctioned flat to palate. Hold that position. Key: get BACK THIRD of tongue up (hardest part). Gentle suction, not forceful pressing. Teeth lightly touching or barely apart. Jaw relaxed. Lips sealed. Breathe through nose. Hold for 2 min.',
+    instructions: 'FIND THE POSITION: Swallow. At the peak of the swallow, your tongue naturally suctions flat against the palate \u2014 that\u2019s the target position.\n\nKEY POINTS:\n\u2022 Back third of tongue pressed up (most important and hardest part)\n\u2022 Gentle suction hold, NOT forceful pressing\n\u2022 Teeth lightly touching or barely apart\n\u2022 Jaw muscles relaxed \u2014 no clenching\n\u2022 Lips sealed, breathe through nose\n\nPRACTICE: Do 5-6 intentional swallows during the 2 min. Each swallow resets correct tongue position.\n\nGOAL: Make this your default resting tongue position all day.',
   },
   {
     id: 'thumbpull_basic_am',
@@ -181,7 +201,7 @@ export const ROUTINE_ITEMS = [
     category: 'exercise',
     schedule: 'alternating_days',
     alternatesWith: 'thumbpull_lateral_am',
-    instructions: 'Wash hands. Stand in chin-tuck posture (critical). Place both thumbs on hard palate, pads up, just behind front teeth on either side of midline ridge. Apply steady UPWARD pressure \u2014 lift, don\u2019t push outward. Hold 30 sec, rest 10 sec, 5 reps. NEVER press on teeth \u2014 only palate bone.',
+    instructions: 'PREP: Wash hands. Stand in chin-tuck posture against wall (posture is critical).\n\nPLACEMENT: Both thumbs on hard palate, pads facing up. Just behind front teeth, one thumb on each side of the midline ridge (the bony seam running front-to-back).\n\nPRESSURE: Steady UPWARD force \u2014 you\u2019re lifting the palate, not pushing outward. Think \u201cceiling press.\u201d Firm but not painful.\n\nTIMING: Hold 30 sec, rest 10 sec. 5 reps (~3.5 min).\n\nSAFETY: NEVER press on teeth \u2014 only palate bone between the teeth. No pain = correct position. If you feel pressure on teeth, reposition thumbs further inward.',
   },
   {
     id: 'thumbpull_lateral_am',
@@ -190,17 +210,8 @@ export const ROUTINE_ITEMS = [
     category: 'exercise',
     schedule: 'alternating_days',
     alternatesWith: 'thumbpull_basic_am',
-    instructions: 'Same posture setup as basic. Place one thumb on left side of palate, one on right. Apply gentle OUTWARD and UPWARD pressure \u2014 widening the palate. Hold 30 sec, rest 10 sec, 5 reps.',
+    instructions: 'PREP: Same as basic \u2014 wash hands, chin-tuck posture against wall.\n\nPLACEMENT: One thumb on left side of palate, one on right. Position wider than basic \u2014 closer to where the palate curves down toward the teeth.\n\nPRESSURE: Gentle OUTWARD and UPWARD simultaneously \u2014 widening the palate. Less force than basic. Think \u201cspread and lift.\u201d\n\nTIMING: Hold 30 sec, rest 10 sec. 5 reps (~3.5 min).\n\nSAFETY: Only press on bone, never teeth. Should feel like a stretch, not pain.',
   },
-  {
-    id: 'tongue_pushups',
-    name: 'Tongue Push-Ups',
-    timeBlock: 'morning_exercises',
-    category: 'exercise',
-    schedule: 'daily',
-    instructions: 'Press ENTIRE tongue (front, middle, back) as hard as you can against roof of mouth. Maximum force. Hold 10 sec, rest 5 sec. 8 reps.',
-  },
-
   // Lunch
   {
     id: 'iron',
@@ -307,46 +318,12 @@ export const ROUTINE_ITEMS = [
     instructions: '0.5mm derma roller on crown/thinning areas. Roll vertically, horizontally, diagonally \u2014 4-5 passes each direction. Wait 24 hours before rosemary oil.',
   },
   {
-    id: 'mewing_set_pm',
-    name: 'Mewing Re-set',
-    timeBlock: 'evening_routine',
-    category: 'exercise',
-    schedule: 'daily',
-    instructions: 'Conscious check-in. Full tongue suction on palate, lips sealed, teeth lightly touching. Practice 5-6 intentional swallows to lock in position. Hold for 1 min.',
-  },
-  {
-    id: 'lying_chin_retraction',
-    name: 'Lying Chin Retractions',
-    timeBlock: 'evening_routine',
-    category: 'exercise',
-    schedule: 'daily',
-    instructions: 'Lie face-up on floor, NO pillow. Press back of head into floor while tucking chin (double chin against floor). Hold 5 sec, release. 15 reps.',
-  },
-  {
-    id: 'thumbpull_basic_pm',
-    name: 'Thumbpulling Session 2 \u2014 Basic',
-    timeBlock: 'evening_routine',
-    category: 'exercise',
-    schedule: 'alternating_days',
-    alternatesWith: 'thumbpull_lateral_pm',
-    instructions: 'Same as morning. 5 reps of 30-sec holds. Strict posture.',
-  },
-  {
-    id: 'thumbpull_lateral_pm',
-    name: 'Thumbpulling Session 2 \u2014 Lateral',
-    timeBlock: 'evening_routine',
-    category: 'exercise',
-    schedule: 'alternating_days',
-    alternatesWith: 'thumbpull_basic_pm',
-    instructions: 'Same as morning lateral version.',
-  },
-  {
     id: 'facial_massage',
     name: 'Facial Massage / Lymphatic Drainage',
     timeBlock: 'evening_routine',
     category: 'exercise',
     schedule: 'daily',
-    instructions: 'With jojoba oil:\n1. FOREHEAD: Center \u2192 sweep outward to temples. 5 passes.\n2. CHEEKS: Nose sides \u2192 sweep along cheekbones to ears. 5 passes.\n3. JAWLINE: Chin center \u2192 sweep along jaw to below ears. 5 passes.\n4. NECK: Stroke DOWNWARD from below ears to collarbone. 5 passes each side.\n5. SINUS: Small circles along brow, down nose sides, under eyes, over cheekbones.',
+    instructions: 'With jojoba oil or after applying rosemary oil:\n\n1. FOREHEAD (30 sec): Fingertips at center of forehead. Medium pressure, sweep outward toward temples. 5 slow passes. Helps drain fluid pooling from sleep.\n\n2. CHEEKS (30 sec): Start beside nose. Sweep along cheekbones outward toward ears. 5 passes. Follow the natural drainage path toward lymph nodes in front of ears.\n\n3. JAWLINE (30 sec): Start at chin center. Sweep along jawline toward below each ear. 5 passes. Reduces jaw tension and puffiness.\n\n4. NECK (30 sec): Stroke DOWNWARD only \u2014 from below ears to collarbone. 5 passes each side. Lymph drains toward the heart \u2014 never push fluid back up.\n\n5. SINUS (30 sec): Small circles along brow bone, down sides of nose, under eyes, over cheekbones. Relieves congestion and under-eye puffiness.\n\nKEY: All strokes move OUTWARD and DOWNWARD toward lymph nodes. Never push fluid back toward center of face.',
   },
 
   // Bedtime
