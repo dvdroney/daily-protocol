@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ChecklistItem from './ChecklistItem';
 
 export default function TimeBlock({ block, items, itemStatuses, onToggle, expandedItemId, onExpandItem, isLiftDay }) {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const completed = items.filter(i => itemStatuses[i.id]?.status === 'completed').length;
 
   return (
